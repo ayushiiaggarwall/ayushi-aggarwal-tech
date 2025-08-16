@@ -14,7 +14,6 @@ const nextConfig = {
     serverComponentsExternalPackages: ['@supabase/supabase-js']
   },
   // Static export for Netlify
-  output: 'export',
   trailingSlash: true,
   swcMinify: true,
   compress: true,
