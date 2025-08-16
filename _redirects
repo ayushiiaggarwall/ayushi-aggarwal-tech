@@ -1,0 +1,6 @@
+# Netlify redirects file
+# Handle client-side routing
+/*    /index.html   200
+
+# API routes (these won't work with static export, need serverless functions)
+/api/*  /.netlify/functions/:splat  200

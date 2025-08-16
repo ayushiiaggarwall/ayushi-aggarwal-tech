@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -21,7 +21,8 @@
     "theme:flamingo": "tsx scripts/apply-tweakcn-theme.ts flamingo",
     "gen:shadcn": "npx shadcn@latest init && npx shadcn@latest add button input card badge sheet badge sheet dialog toast navigation-menu dropdown-menu textarea label avatar tabs tooltip skeleton",
     "build:check": "next build && next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "netlify:build": "next build && next export"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
