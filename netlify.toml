@@ -1,5 +1,5 @@
 [build]
-  publish = ".next"
+  publish = "out"
   command = "npm run build"
 
 [build.environment]
@@ -10,12 +10,6 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-
-# API Routes handling
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
   status = 200
 
 # Handle client-side routing

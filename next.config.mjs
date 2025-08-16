@@ -13,11 +13,12 @@ const nextConfig = {
   experimental: {
     serverComponentsExternalPackages: ['@supabase/supabase-js']
   },
-  // Netlify optimizations
+  // Static export for Netlify
+  output: 'export',
+  trailingSlash: true,
   swcMinify: true,
   compress: true,
   poweredByHeader: false,
-  trailingSlash: false,
   distDir: '.next',
   // Ensure compatibility with different Node.js versions
   webpack: (config, { isServer }) => {

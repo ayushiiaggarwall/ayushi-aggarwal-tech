@@ -1,6 +1,3 @@
-# Netlify redirects file
-# Handle client-side routing
+# Netlify redirects file for Next.js static export
+# Handle client-side routing - redirect all requests to index.html
 /*    /index.html   200
-
-# API routes (these won't work with static export, need serverless functions)
-/api/*  /.netlify/functions/:splat  200
