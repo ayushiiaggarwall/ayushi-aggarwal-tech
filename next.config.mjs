@@ -17,8 +17,6 @@ const nextConfig = {
   swcMinify: true,
   compress: true,
   poweredByHeader: false,
-  // Static export for Netlify
-  output: 'export',
   trailingSlash: false,
   distDir: '.next',
   // Ensure compatibility with different Node.js versions
